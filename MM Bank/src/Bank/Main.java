@@ -14,6 +14,8 @@ public class Main {
 		b1.estadoAtual();
 		
 		
+		Banco2 b2 = new Banco2();
+
 		
 		
 	}
