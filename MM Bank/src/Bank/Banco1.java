@@ -2,14 +2,14 @@ package Bank;
 
 public class Banco1 {
 	public int numConta;
-	protected String tipo;  //cc -> conta corrente & cp -> conta poupança.
+	protected String tipo;  //cc -> conta corrente & cp -> conta poupanï¿½a.
 	private String dono;
 	private float saldo;
 	private boolean status;
 	
 		
 	
-	//Método Construtor
+	//Mï¿½todo Construtor
 	
 	public Banco1() {
 		saldo = 0;
@@ -53,7 +53,7 @@ public class Banco1 {
 		}
 		
 		
-	//Métodos Específicos
+	//Mï¿½todos Especï¿½ficos
 		
 	public void abrirConta(String t) {
 		setTipo(t);
@@ -70,10 +70,10 @@ public class Banco1 {
 	
 	public void fecharConta() {
 		if (getSaldo() > 0) {
-			System.out.println("Não foi possível encerrar a conta pois ainda contém dinheiro.");
+			System.out.println("Nï¿½o foi possï¿½vel encerrar a conta pois ainda contï¿½m dinheiro.");
 			
 		} else if (getSaldo() < 0) {
-			System.out.println("Não foi possível encerrar a conta. Ponta conta em débito");
+			System.out.println("Nï¿½o foi possï¿½vel encerrar a conta. Ponta conta em dï¿½bito");
 			
 		} else {
 			System.out.println("Conta encerrada com sucesso.");
@@ -85,7 +85,7 @@ public class Banco1 {
 		if (getStatus()) {
 			setSaldo(getSaldo() + v);
 		} else {
-			System.out.println("Impossível Depositar");
+			System.out.println("Impossï¿½vel Depositar");
 		}
 	}
 	
@@ -94,10 +94,10 @@ public class Banco1 {
 			if (getSaldo() >= v) {
 				setSaldo(getSaldo() - v);
 			} else {
-				System.out.println("Saldo é insuficiente");
+				System.out.println("Saldo nÃ£o Ã© insuficiente");
 			}
 		}  else {
-			System.out.println("Conta não registrada.");
+			System.out.println("Conta nÃ£o registrada.");
 		}
 	}
 	
