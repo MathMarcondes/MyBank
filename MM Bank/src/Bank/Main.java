@@ -16,6 +16,8 @@ public class Main {
 		
 		Banco2 b2 = new Banco2();
 
+		Banco3 Banco3 = new Banco3();
+				
 		
 		
 	}
