@@ -51,6 +51,9 @@ public class Banco1 {
 		public boolean getStatus() {
 			return this.status;
 		}
+		public float getSaldo(){
+			return this.Saldo;
+		}
 		
 		
 	//M�todos Espec�ficos
